@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "btg",
+	"version": "${version}",
+	"name": "By The Gods!",
+	"description": "Item and creatures of mythology",
+	"authors": [
+		"Ashtoonz"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/btg/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.ashtoonz.btg.BTG"
+		],
+		"fabric-datagen": [
+			"net.ashtoonz.btg.BTGDataGenerator"
+		],
+		"client": [
+			"net.ashtoonz.btg.BTGClient"
+		]
+	},
+	"mixins": [
+		"btg.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
