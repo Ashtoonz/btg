@@ -3,7 +3,7 @@
 	"package": "net.ashtoonz.btg.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-
+		"MouseMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

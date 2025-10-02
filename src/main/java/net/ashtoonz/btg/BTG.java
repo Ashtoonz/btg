@@ -1,5 +1,8 @@
 package net.ashtoonz.btg;
 
+import net.ashtoonz.btg.entity.ModEntities;
+import net.ashtoonz.btg.item.ModItemGroups;
+import net.ashtoonz.btg.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,6 +14,9 @@ public class BTG implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
+		ModItemGroups.registerItemGroups();
+
+		ModItems.registerModItems();
+		ModEntities.registerModEntities();
 	}
 }
